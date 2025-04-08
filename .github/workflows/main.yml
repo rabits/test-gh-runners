@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  log-the-inputs:
+    runs-on:
+      - self-hosted
+      - ubuntu2004-test-label
+    steps:
+      - run: |
+          echo "TEST"
+          echo "$PWD"
